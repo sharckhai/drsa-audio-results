@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <head>
   <title>Audio Collections</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
           font-family: Arial, sans-serif; /* Sets the font for the page */
@@ -16,22 +19,42 @@
           margin-top: 20px;
           font-size: 18px; /* Larger text for better readability */
         }
+        .responsive-container {
+            width: 70%; /* or any percentage or fixed width */
+            margin: 0 auto; /* centers the container */
+        }
+        .responsive-image {
+            width: 50%;  /* Makes the image responsive */
+            height: auto; /* Maintains the aspect ratio */
+            display: block; /* Prevents inline default spacing */
+        }
       </style>
 </head>
 <body>
   <h1>Disentangled Explanations for Neural Network Predictions on Audio Data</h1>
   <p class="description">
     This page depicts results of the experiments conducted within the scope of my master's thesis. The goal was to extract concept-based explanations
-    on neural networks trained on audio classification tasks. Relevant concepts were optimized with Disentangled Relevant Subspace Analysis (DRSA). 
-    Relevances were attributed with Layer-wise Relevance Propagation (LRP). Two experiments have been conducted which include audio classification of synthetic data, and music 
-    genre recognition on the GTZAN dataset. For both tasks a Convolutional Neural Network was employed, to classify log-mel-spectrograms. 
-    The extracted explanations were transformed into listenable audios, and are provided on this page.
-    References, further information and images, as well as a link to the GitHub repo will follow.
+    on neural networks trained on audio classification tasks. Relevant concepts were optimized with Disentangled Relevant Subspace Analysis (DRSA) <a href="#ref1">[1]</a>. 
+    Relevances were attributed with Layer-wise Relevance Propagation (LRP) <a href="#ref2">[2]</a>. Two experiments have been conducted which include, audio classification of synthetic data, and music 
+    genre recognition on the GTZAN dataset <a href="#ref3">[3]</a>. For both tasks, a Convolutional Neural Network was employed to classify log-mel-spectrograms. 
+    The extracted explanations have been transformed into listenable audios, and are provided on this page. The relevance redistribution through relevant concepts \(\mathbf{h}_k\) is schematically depicted in the figure below.
+    <br><br>The code for the experiments is provided here: <a href="https://github.com/sharckhai/drsa-audio">GitHub repo</a>
   </p>
   <ul>
-    <li><a href="gtzan/index.html">Music Showcase</a></li>
-    <li><a href="synthetic/index.html">Synthetic Toy Case</a></li>
+    <li><a href="gtzan/index.html"  style="font-size: 20px;">Music Showcase</a></li>
+    <li><a href="synthetic/index.html" style="font-size: 20px;">Synthetic Toy Case</a></li>
     <!-- Additional links as necessary -->
   </ul>
+  <div class="responsive-container">
+    <img src="drsa_fig.png" alt="Relevance Decomposition with DRSA" style="width: 80%; height: auto; display: block;">
+  </div>
+  <footer>
+    <h3>References</h3>
+    <ol>
+      <li id="ref1">Pattarawat Chormai et al. “Disentangled Explanations of Neural Network Predictions by Finding Relevant Subspaces”. In: IEEE Transactions on Pattern Analysis and Machine Intelligence (2024) </li>
+      <li id="ref2">Sebastian Bach et al. “On Pixel-Wise Explanations for Non-Linear Classifier Decisions by Layer-Wise Relevance Propagation”. In: PLOS ONE 10.7 (July 2015) </li>
+      <li id="ref3">G. Tzanetakis and P. Cook, "Musical genre classification of audio signals," in IEEE Transactions on Speech and Audio Processing, (July 2002) </li>  
+    </ol>
+</footer>
 </body>
 </html>

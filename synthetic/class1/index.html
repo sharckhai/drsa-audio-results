@@ -8,7 +8,7 @@
       line-height: 1.6; /* Increases line spacing for readability */
     }
     footer {
-        position: absolute;
+        position: relative;
         bottom: 0;
         width: 100%;
         background-color: #f8f8f8;
@@ -24,15 +24,25 @@
       margin-top: 20px;
       font-size: 18px; /* Larger text for better readability */
     }
+    .responsive-container {
+        width: 70%; /* or any percentage or fixed width */
+        margin: 0 auto; /* centers the container */
+    }
+    .responsive-image {
+        width: 50%;  /* Makes the image responsive */
+        height: auto; /* Maintains the aspect ratio */
+        display: block; /* Prevents inline default spacing */
+    }
   </style>
 </head>
 <body>
   <h1>Sythetic Class 1</h1>
   <p class="description">
-    Provided is one examplanary sample of sythetic class 1, containing all four class specific sound objects, random sound signals, and noise. Additionally, 
-    the single audio objects of this exact sample are provided.
-    Images will follow.
+    Provided are audios of one examplanary sample contained in sythetic class 2. Audios represent the original sample, and the four distinct audio objects that define this class.
   </p>
+  <div class="responsive-container">
+    <img src="toy_class1.png" alt="Synthetic Class 1" style="width: 90%; height: auto; display: block;">
+  </div>
   <ul>
     <li>
       <h2>Final Sample</h2>
@@ -70,9 +80,9 @@
         </audio>
       </li>
   </ul>
-</body>
-<footer>
+  <footer>
     <p><a href="../">Back to Toy Collections</a></p>
     <p><a href="../../">Back to Landing Page</a></p>
 </footer>
+</body>
 </html>

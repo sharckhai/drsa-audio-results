@@ -24,13 +24,26 @@
       margin-top: 20px;
       font-size: 18px; /* Larger text for better readability */
     }
+    .responsive-container {
+        width: 70%; /* or any percentage or fixed width */
+        margin: 0 auto; /* centers the container */
+    }
+    .responsive-image {
+        width: 50%;  /* Makes the image responsive */
+        height: auto; /* Maintains the aspect ratio */
+        display: block; /* Prevents inline default spacing */
+    }
   </style>
 </head>
 <body>
   <h1>Explanations on Sythetic Class 1</h1>
   <p class="description">
-    Images will follow.
+    The figure displays the log-mel-spectrogram, the standard explanation, and the joint input-concept explanations for three instances of class 1. 
+    Audios of sample 1 correspond to the images of the first row in the figure.
   </p>
+  <div class="responsive-container">
+    <img src="drsa_c1_many.png" alt="Explanations for synthetic toy class 1" style="width: 90%; height: auto; display: block;">
+  </div>
   <h2>Sample 1</h2>
   <ul>
     <li>
@@ -166,10 +179,10 @@
         </audio>
       </li>
   </ul>
-</body>
 
-<footer>
-    <p><a href="../">Back to Toy Collections</a></p>
-    <p><a href="../../">Back to Landing Page</a></p>
-</footer>
+  <footer>
+      <p><a href="../../">Back to Toy Collections</a></p>
+      <p><a href="../../../">Back to Landing Page</a></p>
+  </footer>
+</body>
 </html>
