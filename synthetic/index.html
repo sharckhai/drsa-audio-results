@@ -2,45 +2,33 @@
 <html>
 <head>
   <title>Synthetic Audio Collections</title>
+  <link rel="stylesheet" href="/css/style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif; /* Sets the font for the page */
-      line-height: 1.6; /* Increases line spacing for readability */
-    }
     footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background-color: #f8f8f8;
-        text-align: center;
-        padding: 10px 0;
-    }
-    .container {
-      width: 80%;
-      margin: auto;
-      padding: 20px;
-    }
-    .description {
-      margin-top: 20px;
-      font-size: 18px; /* Larger text for better readability */
-    }
+      position: absolute;
+      bottom: 0; /* Pins the footer to the bottom */
+  }
   </style>
 </head>
-<body>
-  <h1>Audio Collections on Synthetic Data</h1>
-  <p class="description">
-    The first two links namely 'Synthetic Class 1', and 'Synthetic Class 2', each contain an examplanary data sample with the four corresponding class specific audio objects. 
-    Final samples are combinations of up to four of these distinctive audio objects, overlayed with noise. Link displayings 'Explanations ...', contain original samples, extracted standard explanations 
-    with LRP, and the decomposition of those achieved with DRSA.
-  </p>
-  <ul>
-    <li><a href="class1/index.html" style="font-size: 18px;">Synthetic Class 1</a></li>
-    <li><a href="class2/index.html" style="font-size: 18px;">Synthetic Class 2</a></li>
-    <li><a href="explanations/class1/index.html" style="font-size: 18px;">Explanations Synthetic Class 1</a></li>
-    <li><a href="explanations/class2/index.html" style="font-size: 18px;">Explanations Synthetic Class 2</a></li>
-  </ul>
-</body>
+<div class="container">
+  <body>
+    <h1>Audio Collections on Synthetic Data</h1>
+    <hr style="border: none; border-top: 1px solid #dcdde3; margin: 10px 0;">
+    <p class="description">
+      The first two links namely 'Synthetic Class 1', and 'Synthetic Class 2', each contain an examplanary data sample with the four corresponding class specific audio objects. 
+      Final samples are combinations of up to four of these distinctive audio objects, overlayed with noise. Link displayings 'Explanations ...', contain original samples, extracted standard explanations 
+      with LRP, and the decomposition of those achieved with DRSA.
+    </p>
+    <ul>
+      <li><a href="class1/index.html" style="font-size: 18px;">Synthetic Class 1</a></li>
+      <li><a href="class2/index.html" style="font-size: 18px;">Synthetic Class 2</a></li>
+      <li><a href="explanations/class1/index.html" style="font-size: 18px;">Explanations Synthetic Class 1</a></li>
+      <li><a href="explanations/class2/index.html" style="font-size: 18px;">Explanations Synthetic Class 2</a></li>
+    </ul>
+    <hr style="border: none; border-top: 1px solid #dcdde3; margin: 10px 0;">
+  </body>
+</div>
 <footer>
     <p><a href="../">Back to Landing Page</a></p>
-  </footer>
+</footer>
 </html>

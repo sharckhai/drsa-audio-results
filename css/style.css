@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Increases line spacing for readability */
+    /*background: linear-gradient(to right,#ffffff 80%, #ffffff 95%); /* dbdafd White to bright blue gradient */
+    background-size: cover; /* Ensures the background covers the entire area */
+    color: #000000; /* Black or dark text for readability against the light background */
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    /* background: linear-gradient(to left, #fafafa 10%, #dcdde3 30%); /* dbdafd White to bright blue gradient */
+    background: linear-gradient(to right, #acadad 10%,  #808181 25%, #c6c7cd 50%, #808181 75%, #9a9b9b 90%); /* dbdafd White to bright blue gradient */
+    background-size: cover; /* Ensures the background covers the entire area */
+    text-align: center;
+    padding: 10px;
+    margin: 0; /* Reset any margin that might be applied */
+}
+
+.container {
+  width: 80%; 
+  margin: auto;
+  padding: 10px;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 18px; /* Larger text for better readability */
+}
+
+.responsive-container {
+    width: 70%; /* or any percentage or fixed width */
+    margin: 0 auto; /* centers the container */
+}
+
+.responsive-image {
+    width: 50%;  /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Prevents inline default spacing */
+}

@@ -2,141 +2,112 @@
 <html>
 <head>
   <title>Genre Metal</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif; /* Sets the font for the page */
-      line-height: 1.6; /* Increases line spacing for readability */
-    }
-    footer {
-        position: relative;
-        bottom: 0;
-        width: 100%;
-        background-color: #f8f8f8;
-        text-align: center;
-        padding: 10px 0;
-    }
-    .container {
-      width: 80%;
-      margin: auto;
-      padding: 20px;
-    }
-    .description {
-      margin-top: 20px;
-      font-size: 18px; /* Larger text for better readability */
-    }
-    .responsive-container {
-        width: 70%; /* or any percentage or fixed width */
-        margin: 0 auto; /* centers the container */
-    }
-    .responsive-image {
-        width: 50%;  /* Makes the image responsive */
-        height: auto; /* Maintains the aspect ratio */
-        display: block; /* Prevents inline default spacing */
-    }
-  </style>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-  <h1>Genre Metal</h1>
-  <p class="description">
-    The figure displays the log-mel-spectrogram, the standard explanation, and the joint input-concept explanations for two music snippets from genre metal. 
-    Audios of sample 1 correspond to the images of the first row in the figure.
-  </p>
-  <div class="responsive-container">
-    <img src="metal_concepts.png" alt="Explanations for genre Metal" style="width: 90%; height: auto; display: block;">
-  </div>
-  <h2>Sample 1</h2>
-  <ul>
-    <li>
-      <h3>Original Audio</h3>
-      <audio controls>
-        <source src="1_original_audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </li>
-    <li>
-      <h3>Standard Explanation</h3>
-      <audio controls>
-        <source src="1_standard_explanation.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </li>
-    <li>
-      <h3>Concept 1</h3>
-      <audio controls>
-        <source src="1_concept1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </li>
-    <li>
-      <h3>Concept 2</h3>
+<div class="container">
+  <body>
+    <h1>Genre Metal</h1>
+    <p class="description">
+      The figure displays the log-mel-spectrogram, the standard explanation, and the joint input-concept explanations for two music snippets from genre metal. 
+      Audios of sample 1 correspond to the images of the first row in the figure.
+    </p>
+    <div class="responsive-container">
+      <img src="metal_concepts.png" alt="Explanations for genre Metal" style="width: 90%; height: auto; display: block;">
+    </div>
+    <h2>Sample 1</h2>
+    <ul>
+      <li>
+        <h3>Original Audio</h3>
         <audio controls>
-          <source src="1_concept2.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </li>
-    <li>
-      <h3>Concept 3</h3>
-      <audio controls>
-        <source src="1_concept3.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </li>
-    <li>
-      <h3>Concept 4</h3>
-      <audio controls>
-        <source src="1_concept4.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </li>
-  </ul>
-  <h2>Sample 2</h2>
-  <ul>
-    <li>
-      <h3>Original Audio</h3>
-      <audio controls>
-        <source src="2_original_audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </li>
-    <li>
-      <h3>Standard Explanation</h3>
-      <audio controls>
-        <source src="2_standard_explanation.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </li>
-    <li>
-      <h3>Concept 1</h3>
-      <audio controls>
-        <source src="2_concept1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </li>
-    <li>
-      <h3>Concept 2</h3>
-        <audio controls>
-          <source src="2_concept2.mp3" type="audio/mpeg">
+          <source src="1_original_audio.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </li>
       <li>
+        <h3>Standard Explanation</h3>
+        <audio controls>
+          <source src="1_standard_explanation.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li>
+        <h3>Concept 1</h3>
+        <audio controls>
+          <source src="1_concept1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li>
+        <h3>Concept 2</h3>
+          <audio controls>
+            <source src="1_concept2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </li>
+      <li>
         <h3>Concept 3</h3>
         <audio controls>
-          <source src="2_concept3.mp3" type="audio/mpeg">
+          <source src="1_concept3.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </li>
       <li>
         <h3>Concept 4</h3>
         <audio controls>
-          <source src="2_concept4.mp3" type="audio/mpeg">
+          <source src="1_concept4.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </li>
-  </ul>
+    </ul>
+    <h2>Sample 2</h2>
+    <ul>
+      <li>
+        <h3>Original Audio</h3>
+        <audio controls>
+          <source src="2_original_audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li>
+        <h3>Standard Explanation</h3>
+        <audio controls>
+          <source src="2_standard_explanation.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li>
+        <h3>Concept 1</h3>
+        <audio controls>
+          <source src="2_concept1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li>
+        <h3>Concept 2</h3>
+          <audio controls>
+            <source src="2_concept2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </li>
+        <li>
+          <h3>Concept 3</h3>
+          <audio controls>
+            <source src="2_concept3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </li>
+        <li>
+          <h3>Concept 4</h3>
+          <audio controls>
+            <source src="2_concept4.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </li>
+    </ul>
+  </body>
+</div>
   <footer>
     <p><a href="../">Back to GTZAN Collections</a></p>
     <p><a href="../../">Back to Landing Page</a></p>
   </footer>
-</body>
 </html>
