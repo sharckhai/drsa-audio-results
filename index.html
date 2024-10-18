@@ -5,12 +5,31 @@
 <head>
   <title>Audio Collections</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/drsa-audio-results/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
       .responsive-image {
-          width: 70%;  /* Makes the image responsive */
+          width: 80%;  /* Makes the image responsive */
           height: auto; /* Maintains the aspect ratio */
           display: block; /* Prevents inline default spacing */
+          margin-left: 120px;
+          margin-top: -60px;
+          margin-bottom: -20px;
+      }
+      figure {
+        display: inline-block;
+        margin: 0px;
+        text-align: center;
+      }
+      figcaption {
+        margin-top: 10px;
+        font-style: italic;
+        color: #555;
+        width: 100%;
+        text-align: justify;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
       }
     </style>
 </head>
@@ -19,29 +38,88 @@
     <h1>Disentangled Explanations for Neural Network Predictions on Audio Data</h1>
     <hr style="border: none; border-top: 1px solid #dcdde3; margin: 10px 0;">
     <p class="description">
-      This page depicts results of the experiments conducted within the scope of my master's thesis. The goal was to extract concept-based explanations
-      on neural networks trained on audio classification tasks. Relevant concepts were optimized with Disentangled Relevant Subspace Analysis (DRSA) <a href="#ref1">[1]</a>. 
-      Relevances were attributed with Layer-wise Relevance Propagation (LRP) <a href="#ref2">[2]</a>. Two experiments have been conducted which include, audio classification of synthetic data, and music 
-      genre recognition on the GTZAN dataset <a href="#ref3">[3]</a>. For both tasks, a Convolutional Neural Network was employed to classify log-mel-spectrograms. 
-      The extracted explanations have been transformed into listenable audios, and are provided on this page. The relevance redistribution through relevant concepts \(\mathbf{h}_k\) is 
-      schematically depicted in the figure below. The code implemented to perform all experiments is provided at: <a href="https://github.com/sharckhai/drsa-audio">GitHub repo</a>.
+      This page depicts the results of the experiments conducted within the scope of my master's thesis which I completed at the Machine Learning Group
+      TU Berlin under the supervision of K. R. Müller and Grégoire Montavon. The abstract and a brief overview of the conducted working steps are provided 
+      in the following. For a comprehensive overview of the methodologies implemented in this work, please refer to the report which is available here:
+      <a href="https://github.com/sharckhai/drsa-audio-results/assets/pdfs/masterthesis_SamuelHarck.pdf" target="_blank">Show Report</a>. The code implemented to 
+      perform all experiments is provided at: <a href="https://github.com/sharckhai/drsa-audio">GitHub repo</a>.
     </p>
-    <div class="responsive-container">
-      <img src="drsa_fig.png" alt="Relevance Decomposition with DRSA" style="width: 100%; height: auto; display: block; margin-left: -40px;">
+
+    <br>
+    
+    <div class="text-block-abstract">
+      <h1 class="text-header">Abstract</h1>
+      <p>
+        As nonlinear Machine Learning (ML) models are increasingly used in various real world applications, their black-box nature hinders in-depth model 
+        evaluation, apart from performance measures. In response, the field of Explainable Artificial Intelligence (XAI) has made much progress. It aims 
+        to reveal the rationale behind complex ML models, often by assigning relevance scores to model parts and input features, e.g., pixels. However, in 
+        some domains such as audio processing, where data—like time or time-frequency representations of amplitudes—is of rather unintuitive nature, the 
+        extracted explanations can be hard to grasp for humans. Suitably, a novel sub-field in the realm of XAI has emerged in very recent time that aims to 
+        decompose explanations into multiple sub-explanations, representing distinct decision concepts. These approaches offer a promising foundation to gain 
+        more valuable insights into models and the data domain, especially when dealing with complex data scenarios. This study targets the extraction of 
+        concept-based explanations for a neural network applied to audio classification tasks, by utilizing the newly proposed method, Disentangled Relevant 
+        Subspace Analysis (DRSA), in combination with Layerwise Relevance Propagation (LRP).
+      </p>
     </div>
-    <br><h3>Explore Explanation Audios</h1>
-    <ul>
-      <li><a href="gtzan/index.html"  style="font-size: 20px;">Music Showcase</a></li>
-      <li><a href="synthetic/index.html" style="font-size: 20px;">Synthetic Toy Case</a></li>
-    </ul>
+
+    <br>
+
+    <p class="description">
+      <h2>Brief Overview of the Conducted Wroking Steps</h2>
+      <ol>
+        <li>
+          Conceptualization and training of a Deep Learning (DL) approach to solve audio classification tasks on inputs in time-frequency domain. 
+          The tasks are solved with a Convolutional Neural Network. The main showcase is conducted on a Music Genre Recognition (MGR) task 
+          on the GTZAN dataset <a href="#ref1">[1]</a>.
+        </li>
+        <li>
+          Explanation of model decisions on a local basis by utilizing the backpropagation-based XAI method 
+          LRP <a href="#ref2">[2]</a>.
+        </li>
+        <li>
+          Subsequently, relevant subspaces are optimized in latent space of the network with the newly proposed concept-based XAI method 
+          DRSA <a href="#ref3">[3]</a>. 
+          By implementing a two-step attribution that allows to condition relevances on single subspaces while propagating those from
+          the outputs to the inputs, concept-based explanations can be visualized in the input domain. This process is schematically 
+          depicted in the figure below.
+        </li>
+        <li>
+          Design of a methodology to transform explanations in time-frequency space into listenable audios to maximize human interpretability of those.
+        </li>
+        <li>
+          Qualitative and quantitative evaluation of the extracted disentangled explanations to demonstrate the advantage of concept-based explanations 
+          and the enhanced explanatory value obtained through the application of DRSA. To provide a solid basis for evaluation, a synthetic dataset is 
+          created that fits the purpose of this study.
+        </li>
+      </ol>
+    </p>
+
+    <div class="responsive-image">
+      <figure>
+        <img src="drsa_fig.png" alt="Relevance Decomposition with DRSA">
+        <figcaption>Fig. 1: This figure shows the virtual layers \((U_k)_k\) trained with DRSA, that map activations \(a_j\) onto relevant subspaces \(\textbf{h}_k\). 
+          The black arrows depict the forward pass of some input sample trough the neural network, resulting in evidence for some class (here \(y_4\) for 
+          demonstration purposes). Red arrows show the relevance flow of the class evidence of \(y_4\) to the inputs as implemented with LRP. By keeping 
+          the relevance flow disentangled after filtering it through the subspaces, distinct explanation components can be visualized at the inputs.</figcaption>
+      </figure>
+    </div>
+    
+    <div class="center-block">
+      <h2>Explore Results</h2>
+      <a href="gtzan/index.html"  style="font-size: 20px;">Music Showcase</a>
+      <br><br>
+      <a href="synthetic/index.html" style="font-size: 20px;">Synthetic Toy Case</a>
+    </div>
+    <br><br><br>
+
   </body>
   <hr style="border: none; border-top: 1px solid #dcdde3; margin: 30px 0;">
   <body>
     <h3>References</h3>
     <ol>
-      <li id="ref1">Pattarawat Chormai et al. “Disentangled Explanations of Neural Network Predictions by Finding Relevant Subspaces”. In: IEEE Transactions on Pattern Analysis and Machine Intelligence (2024) </li>
+      <li id="ref1">G. Tzanetakis and P. Cook, "Musical genre classification of audio signals," in IEEE Transactions on Speech and Audio Processing, (July 2002) </li>  
       <li id="ref2">Sebastian Bach et al. “On Pixel-Wise Explanations for Non-Linear Classifier Decisions by Layer-Wise Relevance Propagation”. In: PLOS ONE 10.7 (July 2015) </li>
-      <li id="ref3">G. Tzanetakis and P. Cook, "Musical genre classification of audio signals," in IEEE Transactions on Speech and Audio Processing, (July 2002) </li>  
+      <li id="ref3">Pattarawat Chormai et al. “Disentangled Explanations of Neural Network Predictions by Finding Relevant Subspaces”. In: IEEE Transactions on Pattern Analysis and Machine Intelligence (2024) </li>
     </ol>
   </body>
 </div>

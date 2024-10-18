@@ -2,11 +2,14 @@
 <html>
 <head>
   <title>Synthetic Audio Collections</title>
-  <link rel="stylesheet" href="/drsa-audio-results/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <style>
     footer {
       position: absolute;
       bottom: 0; /* Pins the footer to the bottom */
+  }
+  .center-block {
+    max-width: 700px; /* Optional: Limit the width of the text block */
   }
   </style>
 </head>
@@ -19,12 +22,18 @@
       Final samples are combinations of up to four of these distinctive audio objects, overlayed with noise. Link displayings 'Explanations ...', contain original samples, extracted standard explanations 
       with LRP, and the decomposition of those achieved with DRSA.
     </p>
-    <ul>
-      <li><a href="class1/index.html" style="font-size: 18px;">Synthetic Class 1</a></li>
-      <li><a href="class2/index.html" style="font-size: 18px;">Synthetic Class 2</a></li>
-      <li><a href="explanations/class1/index.html" style="font-size: 18px;">Explanations Synthetic Class 1</a></li>
-      <li><a href="explanations/class2/index.html" style="font-size: 18px;">Explanations Synthetic Class 2</a></li>
-    </ul>
+    <div class="center-block">
+      <h2>Synthetic Data by Construction</h2>
+      <br><a href="class1/index.html" style="font-size: 18px;">Synthetic Class 1</a></li>
+      <br><a href="class2/index.html" style="font-size: 18px;">Synthetic Class 2</a></li>
+    </div>
+
+    <div class="center-block">
+      <h2>Disentangled Explanations on Synthetic Data</h2>
+      <br><a href="explanations/class1/index.html" style="font-size: 18px;">Explanations Synthetic Class 1</a></li>
+      <br><a href="explanations/class2/index.html" style="font-size: 18px;">Explanations Synthetic Class 2</a></li>
+    </div>
+
     <hr style="border: none; border-top: 1px solid #dcdde3; margin: 10px 0;">
   </body>
 </div>

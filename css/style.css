@@ -14,11 +14,17 @@ footer {
     position: relative;
     width: 100%;
     /* background: linear-gradient(to left, #fafafa 10%, #dcdde3 30%); /* dbdafd White to bright blue gradient */
-    background: linear-gradient(to right, #acadad 10%,  #808181 25%, #c6c7cd 50%, #808181 75%, #9a9b9b 90%); /* dbdafd White to bright blue gradient */
+    /* background: linear-gradient(to right, #acadad 10%,  #808181 25%, #c6c7cd 50%, #808181 75%, #9a9b9b 90%); /* dbdafd White to bright blue gradient */
+    background: linear-gradient(to right, #acadad59 10%,  #80818155 25%, #c6c7cd47 50%, #8081814a 75%, #9a9b9b4b 90%); /* dbdafd White to bright blue gradient */
     background-size: cover; /* Ensures the background covers the entire area */
     text-align: center;
     padding: 10px;
     margin: 0; /* Reset any margin that might be applied */
+}
+
+ol, li {
+  font-size: 18px; /* Set this to your preferred size */
+  text-align: justify; /* Justifies the text */
 }
 
 .container {
@@ -30,6 +36,7 @@ footer {
 .description {
   margin-top: 20px;
   font-size: 18px; /* Larger text for better readability */
+  text-align: justify; /* Justifies the text */
 }
 
 .responsive-container {
@@ -41,4 +48,36 @@ footer {
     width: 50%;  /* Makes the image responsive */
     height: auto; /* Maintains the aspect ratio */
     display: block; /* Prevents inline default spacing */
+    padding-top: 100px; /* Optional: Smaller padding on the top */
+    padding-bottom: 100px; /* Optional: Smaller padding on the bottom */
+}
+
+.text-block-abstract {
+  padding-left: 40px; 
+  padding-right: 40px; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  background-color: #354b8112; /* Optional: Add a background color to see the padding more clearly */
+  max-width: 700px; /* Limit the width of the text block */
+  margin: 20px auto; /* Center the text block on the page */
+  font-style: italic; /* Make the text italic */
+  text-align: justify; /* Justifies the text */
+}
+
+.text-header {
+  text-align: center; /* Centers the header */
+  font-size: 24px; /* Adjusts the size of the header */
+  margin-bottom: 20px; /* Adds space between the header and the text block */
+  font-weight: normal; /* Removes the bold styling */
+}
+
+.center-block {
+  padding-left: 20px; /* Larger padding on the left */
+  padding-right: 20px; /* Larger padding on the right */
+  padding-top: 10px; /* Optional: Smaller padding on the top */
+  padding-bottom: 40px; /* Optional: Smaller padding on the bottom */
+  background: linear-gradient(to right, #ffa4a426 30%,  #637ddd48 75%);
+  max-width: 500px; /* Optional: Limit the width of the text block */
+  margin: 20px auto; /* Optional: Center the text block on the page */
+  text-align: center; /* Justifies the text */
 }
