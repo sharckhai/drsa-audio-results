@@ -7,36 +7,38 @@
     footer {
       position: absolute;
       bottom: 0; /* Pins the footer to the bottom */
-  }
-  .center-block {
-    max-width: 700px; /* Optional: Limit the width of the text block */
-  }
+    }
+    .center-block-links {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+
   </style>
 </head>
-<div class="container">
-  <body>
-    <h1>Audio Collections on Synthetic Data</h1>
-    <hr style="border: none; border-top: 1px solid #dcdde3; margin: 10px 0;">
+
+<body>
+  <h1 class=center-block-header1>Synthetic Data</h1>
+
+  <div class="container">
     <p class="description">
-      The first two links namely 'Synthetic Class 1', and 'Synthetic Class 2', each contain an examplanary data sample with the four corresponding class specific audio objects. 
-      Final samples are combinations of up to four of these distinctive audio objects, overlayed with noise. Link displayings 'Explanations ...', contain original samples, extracted standard explanations 
-      with LRP, and the decomposition of those achieved with DRSA.
+      Below you will find links to 1. examplanary samples of each class in the synthetic dataset and furhter information about the generation process and 
+      2. the disentangled explanations extracted  with DRSA for each class that reveal the deciison behaviour of the network.
     </p>
-    <div class="center-block">
-      <h2>Synthetic Data by Construction</h2>
-      <br><a href="class1/index.html" style="font-size: 18px;">Synthetic Class 1</a></li>
-      <br><a href="class2/index.html" style="font-size: 18px;">Synthetic Class 2</a></li>
-    </div>
+  </div>
 
-    <div class="center-block">
-      <h2>Disentangled Explanations on Synthetic Data</h2>
-      <br><a href="explanations/class1/index.html" style="font-size: 18px;">Explanations Synthetic Class 1</a></li>
-      <br><a href="explanations/class2/index.html" style="font-size: 18px;">Explanations Synthetic Class 2</a></li>
-    </div>
+  <br>
+  
+  <div class="center-block-links">
+    <h1>Audio Collections</h1>
+    <a href="synthetic_data/index.html" style="font-size: 20px;">Synthetic Data by Construction</a></li>
+    <br><br>
+    <a href="explanations/index.html" style="font-size: 20px;">Explanations on Synthetic Data</a></li>
+  </div>
+</body>
 
-    <hr style="border: none; border-top: 1px solid #dcdde3; margin: 10px 0;">
-  </body>
-</div>
 <footer>
     <p><a href="../">Back to Landing Page</a></p>
 </footer>

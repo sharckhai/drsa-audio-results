@@ -14,11 +14,12 @@ footer {
     position: relative;
     width: 100%;
     /* background: linear-gradient(to left, #fafafa 10%, #dcdde3 30%); /* dbdafd White to bright blue gradient */
-    /* background: linear-gradient(to right, #acadad 10%,  #808181 25%, #c6c7cd 50%, #808181 75%, #9a9b9b 90%); /* dbdafd White to bright blue gradient */
-    background: linear-gradient(to right, #acadad59 10%,  #80818155 25%, #c6c7cd47 50%, #8081814a 75%, #9a9b9b4b 90%); /* dbdafd White to bright blue gradient */
+    /* background: linear-gradient(to right, #acadad59 10%,  #80818155 25%, #c6c7cd47 50%, #8081814a 75%, #9a9b9b4b 90%); /* dbdafd White to bright blue gradient */
+    background: #ffffff; /* dbdafd White to bright blue gradient */
     background-size: cover; /* Ensures the background covers the entire area */
     text-align: center;
     padding: 10px;
+    border-top: 1px dashed #555 ;
     margin: 0; /* Reset any margin that might be applied */
 }
 
@@ -27,10 +28,41 @@ ol, li {
   text-align: justify; /* Justifies the text */
 }
 
+h1, h2, h3 {
+  color: #000000;
+  font-weight: 200;
+}
+
+figure {
+  display: inline-block;
+  margin: 0px;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #373737;
+  width: 100%;
+  text-align: justify;
+  width: fit-content;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+audio {
+  width: 40px; /* Minimal width to show just the play button */
+  height: 40px; /* Optional: Adjust the height for a smaller button */
+}
+
 .container {
   width: 80%; 
   margin: auto;
-  padding: 10px;
+  padding: 0px;
+  color: #373737;
 }
 
 .description {
@@ -40,16 +72,16 @@ ol, li {
 }
 
 .responsive-container {
-    width: 70%; /* or any percentage or fixed width */
-    margin: 0 auto; /* centers the container */
+  width: 70%; /* or any percentage or fixed width */
+  margin: 0 auto; /* centers the container */
 }
 
 .responsive-image {
-    width: 50%;  /* Makes the image responsive */
-    height: auto; /* Maintains the aspect ratio */
-    display: block; /* Prevents inline default spacing */
-    padding-top: 100px; /* Optional: Smaller padding on the top */
-    padding-bottom: 100px; /* Optional: Smaller padding on the bottom */
+  width: 50%;  /* Makes the image responsive */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Prevents inline default spacing */
+  padding-top: 100px; /* Optional: Smaller padding on the top */
+  padding-bottom: 100px; /* Optional: Smaller padding on the bottom */
 }
 
 .text-block-abstract {
@@ -57,7 +89,7 @@ ol, li {
   padding-right: 40px; 
   padding-top: 10px; 
   padding-bottom: 10px; 
-  background-color: #354b8112; /* Optional: Add a background color to see the padding more clearly */
+  background-color: #5a5f6c10; /*  354b8112 Optional: Add a background color to see the padding more clearly */
   max-width: 700px; /* Limit the width of the text block */
   margin: 20px auto; /* Center the text block on the page */
   font-style: italic; /* Make the text italic */
@@ -68,7 +100,6 @@ ol, li {
   text-align: center; /* Centers the header */
   font-size: 24px; /* Adjusts the size of the header */
   margin-bottom: 20px; /* Adds space between the header and the text block */
-  font-weight: normal; /* Removes the bold styling */
 }
 
 .center-block {
@@ -76,8 +107,51 @@ ol, li {
   padding-right: 20px; /* Larger padding on the right */
   padding-top: 10px; /* Optional: Smaller padding on the top */
   padding-bottom: 40px; /* Optional: Smaller padding on the bottom */
-  background: linear-gradient(to right, #ffa4a426 30%,  #637ddd48 75%);
-  max-width: 500px; /* Optional: Limit the width of the text block */
+  /*background: linear-gradient(to right, #ffa4a426 30%,  #637ddd48 75%);*/
+  background: linear-gradient(to right, #ffffff 10%, #ffa4a426 40%,  #637ddd48 60%, #ffffff 90%);
+  max-width: 100%; /* Optional: Limit the width of the text block */
   margin: 20px auto; /* Optional: Center the text block on the page */
   text-align: center; /* Justifies the text */
+}
+
+.center-block-links {
+  padding-left: 20px; /* Larger padding on the left */
+  padding-right: 20px; /* Larger padding on the right */
+  padding-top: 5px; /* Optional: Smaller padding on the top */
+  padding-bottom: 35px; /* Optional: Smaller padding on the bottom */
+  /* background:#354b8112; */
+  background: linear-gradient(to right, #ffffff 10%, #8e919820 50%, #ffffff 90%);
+  max-width: 100%; /* Optional: Limit the width of the text block */
+  width: 100%;
+  margin: 20px auto; /* Optional: Center the text block on the page */
+  text-align: center; /* Justifies the text margin-top: 8%; */
+  border-top: 1px solid #dcdde3;
+  border-bottom: 1px solid #dcdde3;
+}
+
+.center-block-header1 {
+  padding-top: 0px; /* Optional: Smaller padding on the top */
+  padding-bottom: 20px; /* Optional: Smaller padding on the bottom */
+  background:  #ffffff;
+  max-width: 100%; /* Optional: Limit the width of the text block */
+  margin: 20px auto; /* Optional: Center the text block on the page */
+  text-align: center; /* Justifies the text */
+  border-bottom: 1px dashed #000000;
+  margin-bottom: 40px;
+}
+
+.center-block-header2 {
+  padding-top: 5px; /* Optional: Smaller padding on the top */
+  padding-bottom: 5px; /* Optional: Smaller padding on the bottom */
+  background:  #ffffff;
+  max-width: 100%; /* Optional: Limit the width of the text block */
+  margin: 20px auto; /* Optional: Center the text block on the page */
+  text-align: center; /* Justifies the text */
+  border-top: 1px solid #dcdde3;
+  border-bottom: 1px solid #dcdde3;
+  margin-bottom: 40px;
+}
+
+.centered-header {
+  text-align: center;
 }

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<head>
+  <title>Explanations Synthetic Data</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <style>
+    figcaption {
+      padding-left: 10px;
+    }
+    .audio-container {
+        display: flex; /* Aligns items horizontally */
+        gap: 98px; /* Space between each audio control */
+        justify-content: center;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class=center-block-header1>Explanations on Synthetic Data</h1>
+  
+  <div class="container">
+    <p class="description">
+      In the following, 3 different datapoints per class and their repective explanations are depicted. The standard heatmap specifies the local 
+      explanation as extracted with standard LRP. The subspace heatmaps represent the disentangled concept-based explanations as extracted with DRSA and LRP.
+      To ehance visual inspection ability, the icons to play each audio are provided beneath heach figure in the same exact order as the images are provided.
+    </p>
+    <br>
+    <h2 class="center-block-header2">Class 1</h2>
+    <br>
+
+    <div class="responsive-container">
+      <figure>
+      <img src="class1/drsa_c1_many.png" alt="Explanations for synthetic toy class 1" style="width: 100%; height: auto; display: block;">
+      <figcaption>Fig. 1: Displayed from left to right: the original sample, the standard explanation (as obtained with standard LRP), 
+        and 4 explanation components as disentangled with DRSA. The total relevance \(\sum R\) represented by an explanation is stated above 
+        each heatmap. Each row of figures belongs to one specific sample. </figcaption>
+      </figure>
+    </div>
+
+    <div class="audio-container">
+      <audio controls>
+        <source src="class1/0_original_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/0_standard_explanation.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/0_concept1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/0_concept2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/0_concept3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/0_concept4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="audio-container">
+      <audio controls>
+        <source src="class1/1_original_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+        <source src="class1/1_standard_explanation.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+        <source src="class1/1_concept1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/1_concept2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/1_concept3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/1_concept4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="audio-container">
+      <audio controls>
+        <source src="class1/2_original_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/2_standard_explanation.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/2_concept1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/2_concept2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/2_concept3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/2_concept4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <br><br>
+    <h2 class="center-block-header2">Class 2</h2>
+    <br>
+
+    <div class="responsive-container">
+      <figure>
+        <img src="class2/drsa_c2_many.png" alt="Explanations for synthetic toy class 2" style="width: 100%; height: auto; display: block;">
+        <figcaption>Fig. 2: Refer to Fig. 1 for description. </figcaption>
+      </figure>
+    </div>
+
+    <div class="audio-container">
+      <audio controls>
+        <source src="class2/0_original_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/0_standard_explanation.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/0_concept1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/0_concept2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/0_concept3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/0_concept4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="audio-container">
+      <audio controls>
+        <source src="class2/1_original_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/1_standard_explanation.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/1_concept1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/1_concept2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/1_concept3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/1_concept4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    
+    
+    <div class="audio-container">
+      <audio controls>
+        <source src="class2/2_original_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/2_standard_explanation.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/2_concept1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/2_concept2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/2_concept3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/2_concept4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <br><br>
+  </div>
+</body>
+
+<footer>
+  <p><a href="../../">Back to Toy Collections</a></p>
+  <p><a href="../../../">Back to Landing Page</a></p>
+</footer>
+</html>

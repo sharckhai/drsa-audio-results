@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<head>
+  <title>Synthetic Data by Construction</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .audio-container {
+        display: flex; /* Aligns items horizontally */
+        gap: 120px; /* Space between each audio control */
+        justify-content: center;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    audio {
+        width: 40px; /* Minimal width to show just the play button */
+        height: 40px; /* Optional: Adjust the height for a smaller button */
+    }
+    .audio-container audio:nth-child(1) {
+        margin-right: 20px; /* Custom larger gap after the first audio */
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class=center-block-header1>Synthetic Data by Construction</h1>
+
+  <div class="container">
+  
+    <p class="description">
+      The synthetic dataset consists of 2 classes, containing 2000 samples each. Each class is defined by 4 distinct, class specific sound objects that represent rhythmic, 
+      and melodic structures. Each generated audio sample is a superposition of up to 4 class specific audio objects, 5 random sounds and Gaussian noise with a noise strength of 
+      \(\sigma = 0.1\). Samples are generated as superpositions of periodic sine-waves with a time length of 1 second, and a synthetic sample rate of \(f_s = 16000Hz\). Randomness 
+      is introduced by randomizing amplitude, phase, frequency, and modulation frequency from predefined ranges of each sound object.
+      A detailed description of the generation procedure is provided in Chapter 4.1.1. and Appendix D in the thesis report.
+      <br><br>
+      In the following, the audios for one examplanary sample per class and its class specific sound objects are provided with their 2D-representation in the form of log-mel-spectrograms.
+    </p>
+
+    <br>
+    <h2 class=center-block-header2>Synthetic Class 1</h2>
+    <br>
+
+    <div class="responsive-container">
+      <img src="class1/toy_class1.png" alt="Synthetic Class 1" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <div class="audio-container">
+      <audio controls>
+        <source src="class1/final_sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/concept1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/concept2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/concept3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class1/concept4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+
+    <br>
+    <h2 class=center-block-header2>Synthetic Class 2</h2>
+    <br>
+
+    <div class="responsive-container">
+      <img src="class2/toy_class2.png" alt="Synthetic Class 2" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <div class="audio-container">
+      <audio controls>
+        <source src="class2/final_sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/concept1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/concept2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/concept3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="class2/concept4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <br><br>
+  </div>
+</body>
+<footer>
+    <p><a href="../">Back to Toy Collections</a></p>
+    <p><a href="../../">Back to Landing Page</a></p>
+</footer>
+</html>
