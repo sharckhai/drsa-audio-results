@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Synthetic Audio Collections</title>
   <link rel="stylesheet" href="../css/style.css">
   <style>
@@ -14,8 +15,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
-
-
   </style>
 </head>
 
@@ -24,8 +23,8 @@
 
   <div class="container">
     <p class="description">
-      Below you will find links to 1. examplanary samples of each class in the synthetic dataset and furhter information about the generation process and 
-      2. the disentangled explanations extracted  with DRSA for each class that reveal the deciison behaviour of the network.
+      Below you will find a link to examplanary samples of each synthetic data class with additional information about the generation process, 
+      and a link to the disentangled explanations extracted with DRSA for each class that reveal the decision behaviour of the network.
     </p>
   </div>
 
@@ -33,9 +32,11 @@
   
   <div class="center-block-links">
     <h1>Audio Collections</h1>
-    <a href="synthetic_data/index.html" style="font-size: 20px;">Synthetic Data by Construction</a></li>
-    <br><br>
-    <a href="explanations/index.html" style="font-size: 20px;">Explanations on Synthetic Data</a></li>
+    
+    <div class="button-container-local">
+      <a href="synthetic_data/index.html" style="font-size: 20px;" class="button-link">Synthetic Data by Construction</a></li>
+      <a href="explanations/index.html" style="font-size: 20px;" class="button-link">Explanations on Synthetic Data</a></li>
+    </div>
   </div>
 </body>
 

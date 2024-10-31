@@ -1,113 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Genre Classical</title>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .audio-container {
+      display: flex; /* Aligns items horizontally */
+      gap: 118px; /* Space between each audio control */
+      justify-content: center;
+      margin-left: 10px;
+      margin-top: 40px;
+    }
+    .responsive-container {
+      width: 80%; /* or any percentage or fixed width */
+      justify-content: center;
+    }
+  </style>
 </head>
-<div class="container">
-  <body>
-    <h1>Genre Classical</h1>
+
+<body>
+  <h1 class=center-block-header1>Classical</h1>
+
+  <div class="container">
     <p class="description">
-      The figure displays the log-mel-spectrogram, the standard explanation, and the joint input-concept explanations for two music snippets from genre classical. 
-      Audios of sample 1 correspond to the images of the first row in the figure.
+      Provided are two exemplary samples of classical music along with the exrtacted explanations. The standard heatmap specifies the local explanation
+      as obtained with standard LRP. The subspace heatmaps represent the disentangled explanation-components as extracted with DRSA and LRP. In order
+      to enable good visual inspection, the icons to play the associated audios are provided beneath the figures in the same exact order as the 
+      images in the figure.
     </p>
+
+    <br>
+
     <div class="responsive-container">
-      <img src="classical_concepts.png" alt="Explanations for genre Classical" style="width: 90%; height: auto; display: block;">
+      <figure>
+        <img src="classical_concepts.png" alt="Explanations for genre classical" style="width: 100%; height: auto; display: block;">
+        <figcaption>Fig. 1: Displayed from left to right: the original sample, the standard explanation (as obtained with standard LRP), 
+          and 4 explanation components as disentangled with DRSA. The total relevance \(\sum R\) represented by an explanation is stated above 
+          each heatmap. Each row of figures represents one specific sample and its associated explanations. </figcaption>
+      </figure>
     </div>
-    <h2>Sample 1</h2>
-    <ul>
-      <li>
-        <h3>Original Audio</h3>
-        <audio controls>
-          <source src="1_original_audio.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </li>
-      <li>
-        <h3>Standard Explanation</h3>
-        <audio controls>
-          <source src="1_standard_explanation.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </li>
-      <li>
-        <h3>Concept 1</h3>
-        <audio controls>
-          <source src="1_concept1.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </li>
-      <li>
-        <h3>Concept 2</h3>
-          <audio controls>
-            <source src="1_concept2.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-        </li>
-      <li>
-        <h3>Concept 3</h3>
-        <audio controls>
-          <source src="1_concept3.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </li>
-      <li>
-        <h3>Concept 4</h3>
-        <audio controls>
-          <source src="1_concept4.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </li>
-    </ul>
-    <h2>Sample 2</h2>
-    <ul>
-      <li>
-        <h3>Original Audio</h3>
-        <audio controls>
-          <source src="2_original_audio.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </li>
-      <li>
-        <h3>Standard Explanation</h3>
-        <audio controls>
-          <source src="2_standard_explanation.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </li>
-      <li>
-        <h3>Concept 1</h3>
-        <audio controls>
-          <source src="2_concept1.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </li>
-      <li>
-        <h3>Concept 2</h3>
-          <audio controls>
-            <source src="2_concept2.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-        </li>
-        <li>
-          <h3>Concept 3</h3>
-          <audio controls>
-            <source src="2_concept3.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-        </li>
-        <li>
-          <h3>Concept 4</h3>
-          <audio controls>
-            <source src="2_concept4.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-        </li>
-    </ul>
-  </body>
-</div>
-  <footer>
-    <p><a href="../">Back to GTZAN Collections</a></p>
-    <p><a href="../../">Back to Landing Page</a></p>
-  </footer>
+
+    <div class="audio-container">
+      <audio controls>
+        <source src="1_original_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="1_standard_explanation.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="1_concept1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="1_concept2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="1_concept3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="1_concept4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="audio-container">
+      <audio controls>
+        <source src="2_original_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="2_standard_explanation.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="2_concept1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="2_concept2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="2_concept3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio controls>
+        <source src="2_concept4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <br><br>
+  
+  </div>
+</body>
+
+<footer>
+  <p><a href="../">Back to GTZAN Collections</a></p>
+  <p><a href="../../">Back to Landing Page</a></p>
+</footer>
 </html>
