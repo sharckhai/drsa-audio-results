@@ -43,9 +43,10 @@ figcaption {
   margin-top: 10px;
   font-style: italic;
   color: #373737;
-  width: 100%;
+  max-width: 98%;
   text-align: justify;
   width: fit-content;
+  padding-left: 12px;
 }
 
 img {
@@ -63,6 +64,13 @@ audio {
   margin: auto;
   padding: 0px;
   color: #373737;
+}
+
+.footer-container {
+  margin-top: 15px;
+  display: flex; /* Use Flexbox to arrange buttons horizontally */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Space between buttons */
 }
 
 .description {
