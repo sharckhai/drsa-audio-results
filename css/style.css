@@ -19,7 +19,7 @@ footer {
     background-size: cover; /* Ensures the background covers the entire area */
     text-align: center;
     padding: 10px;
-    border-top: 3px dashed #dcdde3;
+    /* border-top: 3px dashed #dcdde3;  */
     margin: 0; /* Reset any margin that might be applied */
 }
 
@@ -100,7 +100,7 @@ audio {
   background: linear-gradient(to right, #ffffff 10%, #8e919820 50%, #ffffff 90%);
   /*background-color: #dddddd20; /*  354b8112 Optional: Add a background color to see the padding more clearly */
   max-width: 700px; /* Limit the width of the text block */
-  margin: 20px auto; /* Center the text block on the page */
+  margin: 0 auto; /* Center the text block on the page */
   font-style: italic; /* Make the text italic */
   text-align: justify; /* Justifies the text */
   border: 1px solid #dcdde3;
@@ -138,12 +138,12 @@ audio {
 
 .center-block-header1 {
   padding-top: 0px; /* Optional: Smaller padding on the top */
-  padding-bottom: 20px; /* Optional: Smaller padding on the bottom */
+  padding-bottom: 0px; /* Optional: Smaller padding on the bottom */
   background:  #ffffff;
   max-width: 100%; /* Optional: Limit the width of the text block */
   margin: 20px auto; /* Optional: Center the text block on the page */
   text-align: center; /* Justifies the text */
-  border-bottom: 3px dashed #dcdde3; 
+  /* border-bottom: 5px dashed #dcdde3; */
   margin-bottom: 40px;
 }
 
