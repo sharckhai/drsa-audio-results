@@ -1,0 +1,37 @@
+{
+  "name": "drsa-audio-results",
+  "version": "1.0.0",
+  "description": "<a href=\"https://sharckhai.github.io/drsa-audio-results/\" target=\"_blank\">GitHub Webpage</a>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharckhai/drsa-audio-results.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharckhai/drsa-audio-results/issues"
+  },
+  "homepage": "https://github.com/sharckhai/drsa-audio-results#readme",
+  "dependencies": {
+    "next": "^16.1.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
+  }
+}
