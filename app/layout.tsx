@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: '--font-manrope',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: '--font-space-grotesk',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: '--font-jetbrains-mono',
+});
 
 export const metadata: Metadata = {
   title: "Disentangled Explanations for Neural Network Predictions on Audio Data - Samuel Harck",
@@ -119,7 +132,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${manrope.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans`}>{children}</body>
     </html>
   );
 }

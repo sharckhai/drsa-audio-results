@@ -9,7 +9,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center leading-tight mb-8">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-gray-900 text-center leading-tight mb-8">
             Disentangled Explanations for Neural Network Predictions on Audio Data
           </h1>
 
@@ -63,7 +63,7 @@ export default function Home() {
       {/* Explore Results Section */}
       <section className="bg-gradient-to-b from-white to-gray-50 py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-4">Explore Results</h2>
+          <h2 className="text-3xl sm:text-4xl font-heading font-bold text-gray-900 text-center mb-4">Explore Results</h2>
           <p className="text-center text-gray-600 text-lg mb-10">Dive into interactive examples and listen to what the model hears.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             <Link
@@ -71,7 +71,7 @@ export default function Home() {
               className="group bg-white rounded-xl shadow-md hover:shadow-xl p-8 transition-all duration-200 transform hover:-translate-y-2 border-2 border-transparent hover:border-blue-500"
             >
               <div className="text-4xl mb-4">🎵</div>
-              <h3 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200 mb-3">
+              <h3 className="text-2xl font-heading font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200 mb-3">
                 Music Showcase
               </h3>
               <p className="text-gray-600 mb-4">
@@ -90,7 +90,7 @@ export default function Home() {
               className="group bg-white rounded-xl shadow-md hover:shadow-xl p-8 transition-all duration-200 transform hover:-translate-y-2 border-2 border-transparent hover:border-purple-500"
             >
               <div className="text-4xl mb-4">🔬</div>
-              <h3 className="text-2xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-200 mb-3">
+              <h3 className="text-2xl font-heading font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-200 mb-3">
                 Synthetic Toy Case
               </h3>
               <p className="text-gray-600 mb-4">
@@ -110,7 +110,7 @@ export default function Home() {
       {/* Abstract Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white rounded-lg shadow-lg border-l-4 border-blue-600 p-6 sm:p-8 lg:p-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-6">Abstract</h2>
+          <h2 className="text-2xl sm:text-3xl font-heading font-bold text-gray-900 text-center mb-6">Abstract</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-base sm:text-lg leading-relaxed text-justify italic text-gray-700">
               As nonlinear Machine Learning (ML) models are increasingly used in various real world applications, their black-box nature hinders in-depth model
@@ -130,7 +130,7 @@ export default function Home() {
       {/* Research Methodology & Figure Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 lg:p-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">Research Methodology</h2>
+          <h2 className="text-2xl sm:text-3xl font-heading font-bold text-gray-900 mb-8 text-center">Research Methodology</h2>
 
           {/* Methodology Steps */}
           <div className="mb-10">
@@ -166,8 +166,8 @@ export default function Home() {
           <div className="my-8 border-t border-gray-200"></div>
 
           {/* Figure */}
-          <figure className="text-center">
-            <div className="relative w-full h-auto bg-gray-50 rounded-lg p-4">
+          <figure className="text-center max-w-5xl mx-auto">
+            <div className="relative w-full h-auto bg-white rounded-lg p-4 border border-gray-200">
               <Image
                 src="/images/drsa_fig.png"
                 alt="Relevance Decomposition with DRSA"
@@ -190,7 +190,7 @@ export default function Home() {
       {/* References Section */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white rounded-lg shadow-md p-6 sm:p-8">
-          <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">References</h3>
+          <h3 className="text-xl sm:text-2xl font-heading font-bold text-gray-900 mb-6">References</h3>
           <ol className="space-y-3 text-sm sm:text-base text-gray-700 list-decimal list-inside">
             <li id="ref1" className="pl-2">
               Pattarawat Chormai et al. "Disentangled Explanations of Neural Network Predictions by Finding Relevant Subspaces". In: IEEE Transactions on Pattern Analysis and Machine Intelligence (2024)

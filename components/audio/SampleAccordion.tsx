@@ -20,7 +20,7 @@ export default function SampleAccordion({ sample, displayNumber, defaultOpen = f
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-6 py-4 flex items-center justify-between bg-gradient-to-r from-gray-50 to-white hover:from-gray-100 hover:to-gray-50 transition-all duration-200"
       >
-        <h3 className="text-lg font-semibold text-gray-900">
+        <h3 className="text-lg font-heading font-semibold text-gray-900">
           Sample {displayNumber}
         </h3>
         <motion.svg

@@ -48,7 +48,7 @@ export default async function GenrePage({ params }: GenrePageProps) {
     <Layout showBackLinks={true} parentLink="/gtzan" parentLinkText="Back to Music Showcase">
       <section className="bg-gradient-to-b from-blue-50 to-white py-12 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-gray-900 text-center mb-6">
             {genreData.name}
           </h1>
           <p className="text-base sm:text-lg text-gray-700 text-justify max-w-4xl mx-auto leading-relaxed">
@@ -66,7 +66,7 @@ export default async function GenrePage({ params }: GenrePageProps) {
       </section>
 
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">
+        <h2 className="text-2xl sm:text-3xl font-heading font-bold text-gray-900 mb-6 text-center">
           Audio Samples & Explanations
         </h2>
         <p className="text-sm sm:text-base text-gray-600 text-center mb-8 max-w-3xl mx-auto">

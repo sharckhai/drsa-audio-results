@@ -13,7 +13,7 @@ export default function Header() {
           {/* Logo/Title */}
           <Link href="/" className="flex items-center group">
             <div className="flex flex-col">
-              <span className="text-base sm:text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
+              <span className="text-base sm:text-lg font-heading font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
                 Explainable Audio AI
               </span>
               <span className="text-xs sm:text-sm text-gray-500 group-hover:text-blue-500 transition-colors duration-200">

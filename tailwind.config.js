@@ -18,6 +18,11 @@ module.exports = {
           light: "#4a5568",
         },
       },
+      fontFamily: {
+        sans: ['var(--font-manrope)', 'sans-serif'],
+        heading: ['var(--font-space-grotesk)', 'sans-serif'],
+        mono: ['var(--font-jetbrains-mono)', 'monospace'],
+      },
     },
   },
   plugins: [],

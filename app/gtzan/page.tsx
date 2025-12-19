@@ -23,7 +23,7 @@ export default function GTZANPage() {
     <Layout showBackLinks={true}>
       <section className="bg-gradient-to-b from-blue-50 to-white py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 text-center mb-6">
+          <h1 className="text-4xl sm:text-5xl font-heading font-bold text-gray-900 text-center mb-6">
             Music Showcase
           </h1>
           <p className="text-lg sm:text-xl text-gray-700 text-center max-w-3xl mx-auto mb-12">
@@ -38,7 +38,7 @@ export default function GTZANPage() {
                 className="group bg-white rounded-xl shadow-md hover:shadow-xl p-6 sm:p-8 transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
               >
                 <div className="flex flex-col h-full">
-                  <h2 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200 mb-3">
+                  <h2 className="text-2xl font-heading font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200 mb-3">
                     {genre.name}
                   </h2>
                   <p className="text-gray-600 text-sm sm:text-base flex-grow">
@@ -60,7 +60,7 @@ export default function GTZANPage() {
       <section className="bg-gray-50 pt-12 pb-6">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-lg shadow-md p-6 sm:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">About the GTZAN Dataset</h2>
+            <h2 className="text-2xl font-heading font-bold text-gray-900 mb-4">About the GTZAN Dataset</h2>
             <p className="text-gray-700 leading-relaxed">
               The GTZAN dataset is a widely-used benchmark for music genre recognition tasks. Each genre category contains
               recorded audio samples of a specific genre.
