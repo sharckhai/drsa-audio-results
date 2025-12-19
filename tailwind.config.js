@@ -19,9 +19,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-manrope)', 'sans-serif'],
+        sans: ['var(--font-ibm-plex-sans)', 'sans-serif'],
         heading: ['var(--font-space-grotesk)', 'sans-serif'],
-        mono: ['var(--font-jetbrains-mono)', 'monospace'],
+        mono: ['var(--font-ibm-plex-mono)', 'monospace'],
       },
     },
   },

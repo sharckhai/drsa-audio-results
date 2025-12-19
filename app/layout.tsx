@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Manrope, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { IBM_Plex_Sans, Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
+const ibmPlexSans = IBM_Plex_Sans({
+  weight: ['400', '500', '600', '700'],
   subsets: ["latin"],
-  variable: '--font-manrope',
+  variable: '--font-ibm-plex-sans',
 });
 
 const spaceGrotesk = Space_Grotesk({
@@ -12,9 +13,10 @@ const spaceGrotesk = Space_Grotesk({
   variable: '--font-space-grotesk',
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const ibmPlexMono = IBM_Plex_Mono({
+  weight: ['400', '500', '600', '700'],
   subsets: ["latin"],
-  variable: '--font-jetbrains-mono',
+  variable: '--font-ibm-plex-mono',
 });
 
 export const metadata: Metadata = {
@@ -132,7 +134,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${manrope.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans`}>{children}</body>
+      <body className={`${ibmPlexSans.variable} ${spaceGrotesk.variable} ${ibmPlexMono.variable} font-sans`}>{children}</body>
     </html>
   );
 }
