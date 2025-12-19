@@ -19,7 +19,7 @@ export default function Home() {
               by decomposing their predictions into <strong>interpretable, disentangled concepts</strong>—making the black box transparent.
             </p>
             <p className="text-base sm:text-lg leading-relaxed text-justify">
-              By combining <strong>Disentangled Relevant Subspace Analysis (DRSA)</strong> with <strong>Layer-wise Relevance Propagation (LRP)</strong>,
+              By combining <strong>Disentangled Relevant Subspace Analysis (DRSA)</strong> <a href="#ref1" className="text-blue-600 hover:underline">[1]</a> with <strong>Layer-wise Relevance Propagation (LRP)</strong> <a href="#ref2" className="text-blue-600 hover:underline">[2]</a>,
               we extract concept-based explanations that reveal <em>what</em> a neural network listens to when classifying music genres.
               Unlike traditional pixel-level explanations, our approach transforms complex time-frequency representations into
               <strong> listenable audio segments</strong>, allowing humans to literally <em>hear</em> what the model hears.
@@ -138,7 +138,7 @@ export default function Home() {
               <li className="text-justify pl-2">
                 Conceptualization and training of a Deep Learning (DL) approach to solve audio classification tasks on inputs in time-frequency domain.
                 The tasks are solved with a Convolutional Neural Network. The main showcase is conducted on a Music Genre Recognition (MGR) task
-                on the GTZAN dataset <a href="#ref1" className="text-blue-600 hover:underline">[1]</a>.
+                on the GTZAN dataset <a href="#ref3" className="text-blue-600 hover:underline">[3]</a>.
               </li>
               <li className="text-justify pl-2">
                 Explanation of model decisions on a local basis by utilizing the backpropagation-based XAI method
@@ -146,7 +146,7 @@ export default function Home() {
               </li>
               <li className="text-justify pl-2">
                 Subsequently, relevant subspaces are optimized in latent space of the network with the newly proposed concept-based XAI method
-                DRSA <a href="#ref3" className="text-blue-600 hover:underline">[3]</a>.
+                DRSA <a href="#ref1" className="text-blue-600 hover:underline">[1]</a>.
                 By implementing a two-step attribution that allows to condition relevances on single subspaces while propagating those from
                 the outputs to the inputs, concept-based explanations can be visualized in the input domain. This process is schematically
                 depicted in the figure below.

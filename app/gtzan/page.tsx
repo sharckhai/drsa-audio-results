@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 };
 
 const genres = [
-  { name: 'HipHop', slug: 'hiphop', description: 'Explore disentangled explanations for hip-hop genre classification' },
-  { name: 'Jazz', slug: 'jazz', description: 'View concept-based explanations for jazz music analysis' },
-  { name: 'Reggae', slug: 'reggae', description: 'Discover how the model identifies reggae characteristics' },
-  { name: 'Metal', slug: 'metal', description: 'Analyze disentangled explanations for metal music' },
-  { name: 'Classical', slug: 'classical', description: 'Examine classical music genre recognition results' },
-  { name: 'Special Cases', slug: 'special-cases', description: 'Explore interesting edge cases and special scenarios' },
+  { name: 'HipHop', slug: 'hiphop', description: 'Explore disentangled explanations for hip-hop genre classification.' },
+  { name: 'Jazz', slug: 'jazz', description: 'View concept-based explanations for jazz music analysis.' },
+  { name: 'Reggae', slug: 'reggae', description: 'Discover how the model identifies reggae characteristics.' },
+  { name: 'Metal', slug: 'metal', description: 'Analyze disentangled explanations for metal music.' },
+  { name: 'Classical', slug: 'classical', description: 'Examine results on classical music.' },
+  { name: 'Special Cases', slug: 'special-cases', description: 'Explore interesting edge cases and special scenarios.' },
 ];
 
 export default function GTZANPage() {
@@ -27,7 +27,7 @@ export default function GTZANPage() {
             Music Showcase
           </h1>
           <p className="text-lg sm:text-xl text-gray-700 text-center max-w-3xl mx-auto mb-12">
-            Explore disentangled explanations for various music genres from the GTZAN dataset
+            Explore disentangled explanations for various music genres. Experiments were conducted on samples of the GTZAN dataset.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -57,7 +57,7 @@ export default function GTZANPage() {
         </div>
       </section>
 
-      <section className="bg-gray-50 py-12">
+      <section className="bg-gray-50 pt-12 pb-6">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-lg shadow-md p-6 sm:p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">About the GTZAN Dataset</h2>
