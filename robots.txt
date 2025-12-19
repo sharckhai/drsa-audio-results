@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sharckhai.github.io/drsa-audio-results/sitemap.xml

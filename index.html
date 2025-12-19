@@ -2,23 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Audio Collections</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disentangled Explanations for Neural Network Predictions on Audio Data - Samuel Harck</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Master's thesis by Samuel Harck on Disentangled Explanations for Neural Network Predictions on Audio Data. Explore DRSA and LRP applied to music genre recognition using the GTZAN dataset. TU Berlin Machine Learning Group.">
+  <meta name="keywords" content="disentangled explanations, neural network interpretability, audio classification, explainable AI, DRSA, LRP, layer-wise relevance propagation, music genre recognition, XAI, audio processing, TU Berlin, machine learning, Samuel Harck">
+  <meta name="author" content="Samuel Harck">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sharckhai.github.io/drsa-audio-results/">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Disentangled Explanations for Neural Network Predictions on Audio Data">
+  <meta property="og:description" content="Master's thesis exploring concept-based explanations for audio classification using DRSA and LRP. By Samuel Harck, TU Berlin Machine Learning Group.">
+  <meta property="og:url" content="https://sharckhai.github.io/drsa-audio-results/">
+  <meta property="og:image" content="https://sharckhai.github.io/drsa-audio-results/drsa_fig.png">
+  <meta property="og:site_name" content="DRSA Audio Results - Samuel Harck">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Disentangled Explanations for Neural Network Predictions on Audio Data">
+  <meta name="twitter:description" content="Master's thesis on concept-based XAI for audio classification. DRSA + LRP on music genre recognition.">
+  <meta name="twitter:image" content="https://sharckhai.github.io/drsa-audio-results/drsa_fig.png">
+
+  <!-- Academic/Scholarly Meta Tags -->
+  <meta name="citation_title" content="Disentangled Explanations for Neural Network Predictions on Audio Data">
+  <meta name="citation_author" content="Harck, Samuel">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_dissertation_institution" content="Technische Universität Berlin">
+  <meta name="citation_pdf_url" content="https://sharckhai.github.io/drsa-audio-results/assets/pdfs/masterthesis_SamuelHarck.pdf">
 
   <link rel="stylesheet" href="css/style.css">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
 
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Thesis",
+    "name": "Disentangled Explanations for Neural Network Predictions on Audio Data",
+    "author": {
+      "@type": "Person",
+      "name": "Samuel Harck",
+      "url": "https://sharckhai.github.io/drsa-audio-results/"
+    },
+    "contributor": [
+      {
+        "@type": "Person",
+        "name": "K. R. Müller"
+      },
+      {
+        "@type": "Person",
+        "name": "Grégoire Montavon"
+      }
+    ],
+    "inSupportOf": "Master of Science",
+    "datePublished": "2024",
+    "publisher": {
+      "@type": "EducationalOrganization",
+      "name": "Technische Universität Berlin",
+      "department": {
+        "@type": "Organization",
+        "name": "Machine Learning Group"
+      }
+    },
+    "about": [
+      "Explainable Artificial Intelligence",
+      "Neural Network Interpretability",
+      "Audio Classification",
+      "Music Genre Recognition",
+      "Deep Learning"
+    ],
+    "keywords": "disentangled explanations, DRSA, LRP, layer-wise relevance propagation, audio classification, XAI, neural networks, concept-based explanations",
+    "url": "https://sharckhai.github.io/drsa-audio-results/",
+    "image": "https://sharckhai.github.io/drsa-audio-results/drsa_fig.png",
+    "encodingFormat": "text/html"
+  }
+  </script>
+
   <style>
     .responsive-image {
-        width: 80%;  /* Makes the image responsive */
-        height: auto; /* Maintains the aspect ratio */
-        display: block; /* Prevents inline default spacing */
-        margin-left: 120px;
-        margin-top: -60px;
-        margin-bottom: -20px;
-    }
-    figcaption {
-      padding-left: -100px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 3rem auto;
     }
   </style>
 </head>
@@ -64,8 +133,8 @@
   </div>
 
   <div class="button-container">
-    <a href="assets/pdfs/masterthesis_SamuelHarck.pdf" style="font-size: 18px;" target="_blank" class="button-link">View Report</a>
-    <a href="https://github.com/sharckhai/drsa-audio" style="font-size: 18px;" target="_blank" class="button-link">View Code</a>
+    <a href="assets/pdfs/masterthesis_SamuelHarck.pdf" target="_blank" class="button-link">View Report</a>
+    <a href="https://github.com/sharckhai/drsa-audio" target="_blank" class="button-link">View Code</a>
   </div>
 
   <div class="container">
@@ -106,8 +175,8 @@
     <h1>Explore Results</h1>
 
     <div class="button-container-local">
-      <a href="gtzan/index.html"  style="font-size: 20px;" class="button-link">Music Showcase</a>
-      <a href="synthetic/index.html" style="font-size: 20px;" class="button-link">Synthetic Toy Case</a>
+      <a href="gtzan/index.html" class="button-link">Music Showcase</a>
+      <a href="synthetic/index.html" class="button-link">Synthetic Toy Case</a>
     </div>
   </div>
 

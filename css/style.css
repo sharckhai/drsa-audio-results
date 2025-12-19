@@ -1,57 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+:root {
+    --primary-color: #1a1a2e;
+    --secondary-color: #16213e;
+    --accent-color: #0f3460;
+    --light-accent: #4a5568;
+    --bg-color: #fafbfc;
+    --card-bg: #ffffff;
+    --text-primary: #2d3748;
+    --text-secondary: #4a5568;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-    margin: 0; 
+    margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6; /* Increases line spacing for readability */
-    /*background: linear-gradient(to right,#ffffff 80%, #ffffff 95%); /* dbdafd White to bright blue gradient */
-    background-size: cover; /* Ensures the background covers the entire area */
-    color: #000000; /* Black or dark text for readability against the light background */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 footer {
-    position: relative;
     width: 100%;
-    /* background: linear-gradient(to left, #fafafa 10%, #dcdde3 30%); /* dbdafd White to bright blue gradient */
-    /* background: linear-gradient(to right, #acadad59 10%,  #80818155 25%, #c6c7cd47 50%, #8081814a 75%, #9a9b9b4b 90%); /* dbdafd White to bright blue gradient */
-    background: #ffffff; /* dbdafd White to bright blue gradient */
-    background-size: cover; /* Ensures the background covers the entire area */
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--border-color);
     text-align: center;
-    padding: 10px;
-    /* border-top: 3px dashed #dcdde3;  */
-    margin: 0; /* Reset any margin that might be applied */
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
 }
 
 ol, li {
-  font-size: 18px; /* Set this to your preferred size */
-  text-align: justify; /* Justifies the text */
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
 }
 
-h1, h2, h3 {
-  color: #000000;
-  font-weight: 200;
+ol {
+    padding-left: 1.5rem;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -0.025em;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.015em;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
 }
 
 figure {
-  display: inline-block;
-  margin: 0px;
-  text-align: center;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    width: 100%;
 }
 
 figcaption {
-  margin-top: 10px;
-  font-style: italic;
-  color: #373737;
-  max-width: 98%;
-  text-align: justify;
-  width: fit-content;
-  padding-left: 12px;
+    margin-top: 1rem;
+    font-family: 'Merriweather', Georgia, serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    max-width: 100%;
+    text-align: justify;
+    line-height: 1.6;
+    padding: 0 1rem;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+img:hover {
+    transform: scale(1.01);
+    box-shadow: var(--shadow-lg);
 }
 
 audio {
@@ -60,10 +121,10 @@ audio {
 }
 
 .container {
-  width: 80%; 
-  margin: auto;
-  padding: 0px;
-  color: #373737;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    color: var(--text-primary);
 }
 
 .footer-container {
@@ -74,9 +135,11 @@ audio {
 }
 
 .description {
-  margin-top: 20px;
-  font-size: 18px; /* Larger text for better readability */
-  text-align: justify; /* Justifies the text */
+    margin-top: 1.5rem;
+    font-size: 1.05rem;
+    text-align: justify;
+    line-height: 1.8;
+    color: var(--text-primary);
 }
 
 .responsive-container {
@@ -93,23 +156,31 @@ audio {
 }
 
 .text-block-abstract {
-  padding-left: 40px; 
-  padding-right: 40px; 
-  padding-top: 10px; 
-  padding-bottom: 10px; 
-  background: linear-gradient(to right, #ffffff 10%, #8e919820 50%, #ffffff 90%);
-  /*background-color: #dddddd20; /*  354b8112 Optional: Add a background color to see the padding more clearly */
-  max-width: 700px; /* Limit the width of the text block */
-  margin: 0 auto; /* Center the text block on the page */
-  font-style: italic; /* Make the text italic */
-  text-align: justify; /* Justifies the text */
-  border: 1px solid #dcdde3;
+    padding: 2.5rem 3rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-color);
+    max-width: 800px;
+    margin: 3rem auto;
+    font-family: 'Merriweather', Georgia, serif;
+    font-style: italic;
+    text-align: justify;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.text-block-abstract:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
 }
 
 .text-header {
-  text-align: center; /* Centers the header */
-  font-size: 24px; /* Adjusts the size of the header */
-  margin-bottom: 20px; /* Adds space between the header and the text block */
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-style: normal;
 }
 
 .center-block {
@@ -125,38 +196,32 @@ audio {
 }
 
 .center-block-links {
-  padding-top: 5px; /* Optional: Smaller padding on the top */
-  padding-bottom: 35px; /* Optional: Smaller padding on the bottom */
-  background: linear-gradient(to right, #ffffff 10%, #8e919820 50%, #ffffff 90%);
-  max-width: 100%; /* Optional: Limit the width of the text block */
-  width: 100%;
-  margin: 0 auto; /* Optional: Center the text block on the page */
-  text-align: center; /* Justifies the text margin-top: 8%; */
-  border-top: 1px solid #dcdde3;
-  border-bottom: 1px solid #dcdde3;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+    width: 100%;
+    margin: 4rem auto;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .center-block-header1 {
-  padding-top: 0px; /* Optional: Smaller padding on the top */
-  padding-bottom: 0px; /* Optional: Smaller padding on the bottom */
-  background:  #ffffff;
-  max-width: 100%; /* Optional: Limit the width of the text block */
-  margin: 20px auto; /* Optional: Center the text block on the page */
-  text-align: center; /* Justifies the text */
-  /* border-bottom: 5px dashed #dcdde3; */
-  margin-bottom: 40px;
+    padding: 3rem 2rem 2rem;
+    background: var(--bg-color);
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    text-align: center;
 }
 
 .center-block-header2 {
-  padding-top: 5px; /* Optional: Smaller padding on the top */
-  padding-bottom: 5px; /* Optional: Smaller padding on the bottom */
-  background:  #ffffff;
-  max-width: 30%; /* Optional: Limit the width of the text block */
-  margin: 20px auto; /* Optional: Center the text block on the page */
-  text-align: center; /* Justifies the text */
-  border-top: 1px solid #dcdde3;
-  border-bottom: 1px solid #dcdde3;
-  margin-bottom: 40px;
+    padding: 1rem 2rem;
+    background: var(--card-bg);
+    max-width: 600px;
+    margin: 2rem auto 3rem;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .centered-header {
@@ -164,50 +229,104 @@ audio {
 }
 
 .button-container {
-  display: flex; /* Use Flexbox to arrange buttons horizontally */
-  justify-content: center; /* Center the buttons horizontally */
-  gap: 100px; /* Space between buttons */
-  margin: 60px auto; /* Optional: Add some vertical spacing */
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  max-width: 30%;
-  border-bottom: 1px solid #dcdde3;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem auto;
+    padding: 2rem 2rem 2.5rem;
+    text-align: center;
+    max-width: 600px;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .button-container-local {
-  display: flex; /* Use Flexbox to arrange buttons horizontally */
-  justify-content: center; /* Center the buttons horizontally */
-  gap: 40px; /* Space between buttons */
-  margin: 0 auto; /* Optional: Add some vertical spacing */
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem auto 0;
+    padding-top: 1.5rem;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .button-link {
-  display: inline-block;
-  padding: 10px 15px;
-  background: linear-gradient(to right, #323232 0%, #8e9198 90%); 
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    letter-spacing: 0.025em;
 }
 
 .button-link:hover {
-  color: #003ffb;
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    color: #ffffff;
 }
 
-@media (max-width: 600px) {
-  .button-container {
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center; /* Center buttons */
-  }
+.button-link:active {
+    transform: translateY(0);
+}
 
-  .button-link {
-    width: 80%; /* Make buttons take up more horizontal space */
-    text-align: center; /* Center text inside buttons */
-  }
+/* Link styling */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+        margin: 2rem auto;
+    }
+
+    .text-block-abstract {
+        padding: 2rem 1.5rem;
+    }
+
+    .button-container,
+    .button-container-local {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .button-link {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .center-block-header1 {
+        padding: 2rem 1rem 1rem;
+    }
 }

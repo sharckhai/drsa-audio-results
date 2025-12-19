@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Landing Page -->
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- GTZAN Music Showcase -->
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/gtzan/index.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- GTZAN Genre Pages -->
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/gtzan/classical/index.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/gtzan/hiphop/index.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/gtzan/jazz/index.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/gtzan/metal/index.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/gtzan/reggae/index.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/gtzan/special-cases/index.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Synthetic Data Pages -->
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/synthetic/index.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/synthetic/explanations/index.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/synthetic/explanations/class2/index.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/synthetic/synthetic_data/index.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Thesis PDF -->
+  <url>
+    <loc>https://sharckhai.github.io/drsa-audio-results/assets/pdfs/masterthesis_SamuelHarck.pdf</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
