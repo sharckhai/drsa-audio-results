@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-12 sm:py-16 lg:py-20">
+      <section className="bg-gradient-to-b from-gray-50 to-white pt-8 pb-12 sm:pt-12 sm:pb-16 lg:pt-16 lg:pb-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-gray-900 text-center leading-tight mb-8">
             Disentangled Explanations for Neural Network Predictions on Audio Data
