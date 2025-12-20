@@ -42,6 +42,12 @@ export default function Header() {
             >
               Synthetic Toy Case
             </Link>
+            <Link
+              href="/gtzan/special-cases"
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+            >
+              Evaluation
+            </Link>
             <a
               href="/assets/pdfs/masterthesis_SamuelHarck.pdf"
               target="_blank"
@@ -94,6 +100,13 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Synthetic Toy Case
+              </Link>
+              <Link
+                href="/gtzan/special-cases"
+                className="px-3 py-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200 font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Evaluation
               </Link>
               <a
                 href="/assets/pdfs/masterthesis_SamuelHarck.pdf"

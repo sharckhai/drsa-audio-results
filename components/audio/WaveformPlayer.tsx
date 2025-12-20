@@ -25,6 +25,8 @@ export default function WaveformPlayer({ audioPath, label }: WaveformPlayerProps
   useEffect(() => {
     if (!containerRef.current) return;
 
+    let isMounted = true;
+
     const wavesurfer = WaveSurfer.create({
       container: containerRef.current,
       waveColor: '#93c5fd',
@@ -43,21 +45,44 @@ export default function WaveformPlayer({ audioPath, label }: WaveformPlayerProps
     wavesurfer.load(audioPath);
 
     wavesurfer.on('ready', () => {
-      setIsLoading(false);
-      setDuration(formatTime(wavesurfer.getDuration()));
+      if (isMounted) {
+        setIsLoading(false);
+        setDuration(formatTime(wavesurfer.getDuration()));
+      }
     });
 
     wavesurfer.on('audioprocess', () => {
-      setCurrentTime(formatTime(wavesurfer.getCurrentTime()));
+      if (isMounted) {
+        setCurrentTime(formatTime(wavesurfer.getCurrentTime()));
+      }
     });
 
     wavesurfer.on('finish', () => {
-      setIsPlaying(false);
-      setCurrentTime(formatTime(0));
+      if (isMounted) {
+        setIsPlaying(false);
+        setCurrentTime(formatTime(0));
+      }
+    });
+
+    wavesurfer.on('error', (error) => {
+      console.warn('WaveSurfer error:', error);
+      if (isMounted) {
+        setIsLoading(false);
+      }
     });
 
     return () => {
-      wavesurfer.destroy();
+      isMounted = false;
+      if (wavesurfer) {
+        try {
+          wavesurfer.pause();
+          wavesurfer.unAll();
+          wavesurfer.destroy();
+        } catch (error) {
+          // Silently catch destroy errors during cleanup
+          console.warn('WaveSurfer cleanup error:', error);
+        }
+      }
     };
   }, [audioPath]);
 

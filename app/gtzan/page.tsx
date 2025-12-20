@@ -15,7 +15,7 @@ const genres = [
   { name: 'Reggae', slug: 'reggae', description: 'Discover how the model identifies reggae characteristics.' },
   { name: 'Metal', slug: 'metal', description: 'Analyze disentangled explanations for metal music.' },
   { name: 'Classical', slug: 'classical', description: 'Examine results on classical music.' },
-  { name: 'Special Cases', slug: 'special-cases', description: 'Explore interesting edge cases and special scenarios.' },
+  { name: 'Evaluation of Findings', slug: 'special-cases', description: 'Quantitative and qualitative evaluation demonstrating class-specific subspaces.' },
 ];
 
 export default function GTZANPage() {

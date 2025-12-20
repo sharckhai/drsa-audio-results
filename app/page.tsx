@@ -166,7 +166,7 @@ export default function Home() {
           <div className="my-8 border-t border-gray-200"></div>
 
           {/* Figure */}
-          <figure className="text-center max-w-5xl mx-auto">
+          <figure className="text-center max-w-4xl mx-auto">
             <div className="relative w-full h-auto bg-white rounded-lg p-4 border border-gray-200">
               <Image
                 src="/images/drsa_fig.png"
