@@ -16,6 +16,7 @@ export default function MathNotation({ math, inline = false, className = '' }: M
     if (typeof window !== 'undefined' && ref.current) {
       // Dynamically import katex only on client side
       import('katex').then((katex) => {
+        // @ts-ignore - CSS import works at runtime
         import('katex/dist/katex.min.css');
 
         try {

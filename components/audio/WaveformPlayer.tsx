@@ -26,61 +26,73 @@ export default function WaveformPlayer({ audioPath, label }: WaveformPlayerProps
     if (!containerRef.current) return;
 
     let isMounted = true;
+    let wavesurfer: WaveSurfer | null = null;
 
-    const wavesurfer = WaveSurfer.create({
-      container: containerRef.current,
-      waveColor: '#93c5fd',
-      progressColor: '#2563eb',
-      cursorColor: '#1e40af',
-      barWidth: 2,
-      barRadius: 3,
-      barGap: 2,
-      height: 60,
-      normalize: true,
-      backend: 'WebAudio',
-    });
+    const initWaveSurfer = async () => {
+      try {
+        wavesurfer = WaveSurfer.create({
+          container: containerRef.current!,
+          waveColor: '#93c5fd',
+          progressColor: '#2563eb',
+          cursorColor: '#1e40af',
+          barWidth: 2,
+          barRadius: 3,
+          barGap: 2,
+          height: 60,
+          normalize: true,
+          backend: 'WebAudio',
+        });
 
-    wavesurferRef.current = wavesurfer;
+        wavesurferRef.current = wavesurfer;
 
-    wavesurfer.load(audioPath);
+        wavesurfer.on('ready', () => {
+          if (isMounted && wavesurfer) {
+            setIsLoading(false);
+            setDuration(formatTime(wavesurfer.getDuration()));
+          }
+        });
 
-    wavesurfer.on('ready', () => {
-      if (isMounted) {
-        setIsLoading(false);
-        setDuration(formatTime(wavesurfer.getDuration()));
+        wavesurfer.on('audioprocess', () => {
+          if (isMounted && wavesurfer) {
+            setCurrentTime(formatTime(wavesurfer.getCurrentTime()));
+          }
+        });
+
+        wavesurfer.on('finish', () => {
+          if (isMounted) {
+            setIsPlaying(false);
+            setCurrentTime('0:00');
+          }
+        });
+
+        wavesurfer.on('error', (error) => {
+          if (isMounted) {
+            console.warn('WaveSurfer error:', error);
+            setIsLoading(false);
+          }
+        });
+
+        wavesurfer.load(audioPath);
+      } catch (error) {
+        if (isMounted) {
+          console.warn('WaveSurfer initialization error:', error);
+          setIsLoading(false);
+        }
       }
-    });
+    };
 
-    wavesurfer.on('audioprocess', () => {
-      if (isMounted) {
-        setCurrentTime(formatTime(wavesurfer.getCurrentTime()));
-      }
-    });
-
-    wavesurfer.on('finish', () => {
-      if (isMounted) {
-        setIsPlaying(false);
-        setCurrentTime(formatTime(0));
-      }
-    });
-
-    wavesurfer.on('error', (error) => {
-      console.warn('WaveSurfer error:', error);
-      if (isMounted) {
-        setIsLoading(false);
-      }
-    });
+    initWaveSurfer();
 
     return () => {
       isMounted = false;
+      wavesurferRef.current = null;
+
       if (wavesurfer) {
         try {
-          wavesurfer.pause();
           wavesurfer.unAll();
           wavesurfer.destroy();
         } catch (error) {
-          // Silently catch destroy errors during cleanup
-          console.warn('WaveSurfer cleanup error:', error);
+          // Silently handle cleanup errors
         }
       }
     };
