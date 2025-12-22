@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Layout from '@/components/Layout';
 
 export default function Home() {
+  const basePath = process.env.NODE_ENV === 'production' ? '/drsa-audio-results' : '';
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -169,7 +171,7 @@ export default function Home() {
           <figure className="text-center max-w-4xl mx-auto">
             <div className="relative w-full h-auto bg-white rounded-lg p-4 border border-gray-200">
               <Image
-                src="/images/drsa_fig.png"
+                src={`${basePath}/images/drsa_fig.png`}
                 alt="Relevance Decomposition with DRSA"
                 width={1200}
                 height={800}
