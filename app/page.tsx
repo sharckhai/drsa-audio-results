@@ -38,7 +38,7 @@ export default function Home() {
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
           <a
-            href="/assets/pdfs/masterthesis_SamuelHarck.pdf"
+            href={`${basePath}/assets/pdfs/masterthesis_SamuelHarck.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg shadow-md hover:from-blue-700 hover:to-blue-800 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-center"

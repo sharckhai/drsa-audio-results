@@ -13,6 +13,7 @@ export default function WaveformPlayer({ audioPath, label }: WaveformPlayerProps
   const wavesurferRef = useRef<WaveSurfer | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
   const [currentTime, setCurrentTime] = useState('0:00');
   const [duration, setDuration] = useState('0:00');
 
@@ -27,6 +28,11 @@ export default function WaveformPlayer({ audioPath, label }: WaveformPlayerProps
 
     let isMounted = true;
     let wavesurfer: WaveSurfer | null = null;
+
+    // Reset states for new audio
+    setIsLoading(true);
+    setHasError(false);
+    setIsPlaying(false);
 
     const initWaveSurfer = async () => {
       try {
@@ -69,6 +75,7 @@ export default function WaveformPlayer({ audioPath, label }: WaveformPlayerProps
           if (isMounted) {
             console.warn('WaveSurfer error:', error);
             setIsLoading(false);
+            setHasError(true);
           }
         });
 
@@ -77,6 +84,7 @@ export default function WaveformPlayer({ audioPath, label }: WaveformPlayerProps
         if (isMounted) {
           console.warn('WaveSurfer initialization error:', error);
           setIsLoading(false);
+          setHasError(true);
         }
       }
     };
@@ -118,14 +126,23 @@ export default function WaveformPlayer({ audioPath, label }: WaveformPlayerProps
 
       <button
         onClick={handlePlayPause}
-        disabled={isLoading}
+        disabled={isLoading || hasError}
         className={`w-full py-2 px-4 rounded-md font-medium transition-all duration-200 ${
-          isLoading
+          hasError
+            ? 'bg-red-100 text-red-600 cursor-not-allowed'
+            : isLoading
             ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
             : 'bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-sm hover:shadow-md'
         }`}
       >
-        {isLoading ? (
+        {hasError ? (
+          <span className="flex items-center justify-center">
+            <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+            </svg>
+            Failed to load
+          </span>
+        ) : isLoading ? (
           <span className="flex items-center justify-center">
             <svg
               className="animate-spin h-4 w-4 mr-2"
