@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/drsa-audio-results' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/drsa-audio-results/' : '',
+  basePath: process.env.GITHUB_PAGES ? '/drsa-audio-results' : '',
+  assetPrefix: process.env.GITHUB_PAGES ? '/drsa-audio-results/' : '',
 };
 
 module.exports = nextConfig;
