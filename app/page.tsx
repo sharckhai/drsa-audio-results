@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Layout from '@/components/Layout';
 
 export default function Home() {
-  const basePath = process.env.NODE_ENV === 'production' ? '/drsa-audio-results' : '';
+  const basePath = process.env.GITHUB_PAGES ? '/drsa-audio-results' : '';
 
   return (
     <Layout>

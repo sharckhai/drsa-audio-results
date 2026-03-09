@@ -27,7 +27,7 @@ export interface GenreData {
   qualitativeEvaluation?: string;
 }
 
-const basePath = process.env.NODE_ENV === 'production' ? '/drsa-audio-results' : '';
+const basePath = process.env.GITHUB_PAGES ? '/drsa-audio-results' : '';
 
 const createSampleAudioFiles = (genre: string, sampleIndex: number): AudioFile[] => [
   { label: 'Original Audio', path: `${basePath}/audio/gtzan/${genre}/${sampleIndex}_original_audio.mp3` },

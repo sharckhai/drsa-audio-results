@@ -45,7 +45,7 @@ export default async function GenrePage({ params }: GenrePageProps) {
     notFound();
   }
 
-  const basePath = process.env.NODE_ENV === 'production' ? '/drsa-audio-results' : '';
+  const basePath = process.env.GITHUB_PAGES ? '/drsa-audio-results' : '';
   const isValidationPage = genre === 'special-cases';
 
   return (

@@ -26,7 +26,7 @@ export interface SectionData {
   classes: ClassData[];
 }
 
-const basePath = process.env.NODE_ENV === 'production' ? '/drsa-audio-results' : '';
+const basePath = process.env.GITHUB_PAGES ? '/drsa-audio-results' : '';
 
 // Construction page - concept audio files for each class
 const constructionClass1Audios: AudioFile[] = [
