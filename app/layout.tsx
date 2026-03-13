@@ -38,21 +38,24 @@ export const metadata: Metadata = {
     "Samuel Harck"
   ],
   authors: [{ name: "Samuel Harck" }],
+  alternates: {
+    canonical: "https://audio-xai.com/",
+  },
   openGraph: {
     type: "website",
     title: "Disentangled Explanations for Neural Network Predictions on Audio Data",
     description: "Master's thesis exploring concept-based explanations for audio classification using DRSA and LRP. By Samuel Harck, TU Berlin Machine Learning Group.",
-    url: "https://sharckhai.github.io/drsa-audio-results/",
+    url: "https://audio-xai.com/",
     siteName: "DRSA Audio Results - Samuel Harck",
     images: [{
-      url: "https://sharckhai.github.io/drsa-audio-results/drsa_fig.png",
+      url: "https://audio-xai.com/drsa_fig.png",
     }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Disentangled Explanations for Neural Network Predictions on Audio Data",
     description: "Master's thesis on concept-based XAI for audio classification. DRSA + LRP on music genre recognition.",
-    images: ["https://sharckhai.github.io/drsa-audio-results/drsa_fig.png"],
+    images: ["https://audio-xai.com/drsa_fig.png"],
   },
   robots: {
     index: true,
@@ -69,14 +72,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://sharckhai.github.io/drsa-audio-results/" />
-
         {/* Academic/Scholarly Meta Tags */}
         <meta name="citation_title" content="Disentangled Explanations for Neural Network Predictions on Audio Data" />
         <meta name="citation_author" content="Harck, Samuel" />
         <meta name="citation_publication_date" content="2024" />
         <meta name="citation_dissertation_institution" content="Technische Universität Berlin" />
-        <meta name="citation_pdf_url" content="https://sharckhai.github.io/drsa-audio-results/assets/pdfs/masterthesis_SamuelHarck.pdf" />
+        <meta name="citation_pdf_url" content="https://audio-xai.com/assets/pdfs/masterthesis_SamuelHarck.pdf" />
 
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -97,7 +98,7 @@ export default function RootLayout({
               "author": {
                 "@type": "Person",
                 "name": "Samuel Harck",
-                "url": "https://sharckhai.github.io/drsa-audio-results/"
+                "url": "https://audio-xai.com/"
               },
               "contributor": [
                 {
@@ -127,8 +128,8 @@ export default function RootLayout({
                 "Deep Learning"
               ],
               "keywords": "disentangled explanations, DRSA, LRP, layer-wise relevance propagation, audio classification, XAI, neural networks, concept-based explanations",
-              "url": "https://sharckhai.github.io/drsa-audio-results/",
-              "image": "https://sharckhai.github.io/drsa-audio-results/drsa_fig.png",
+              "url": "https://audio-xai.com/",
+              "image": "https://audio-xai.com/drsa_fig.png",
               "encodingFormat": "text/html"
             })
           }}

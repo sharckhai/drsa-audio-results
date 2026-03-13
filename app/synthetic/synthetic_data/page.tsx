@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: 'Synthetic Data by Construction | Samuel Harck',
   description: 'Explore the construction of synthetic audio data with controlled properties for evaluating DRSA concept extraction.',
   keywords: ['synthetic data', 'audio synthesis', 'DRSA', 'ground truth', 'concept extraction', 'XAI'],
+  alternates: { canonical: 'https://audio-xai.com/synthetic/synthetic_data' },
 };
 
 export default function SyntheticDataPage() {

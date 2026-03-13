@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: 'Synthetic Audio Dataset - Controlled XAI Evaluation | Samuel Harck',
   description: 'Synthetic audio dataset designed for quantitative evaluation of disentangled explanations. Explore concept-based analysis with ground truth using DRSA and LRP.',
   keywords: ['synthetic audio', 'DRSA', 'XAI evaluation', 'controlled dataset', 'concept-based XAI', 'neural network explanations'],
+  alternates: { canonical: 'https://audio-xai.com/synthetic' },
 };
 
 const sections = [

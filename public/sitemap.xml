@@ -3,7 +3,7 @@
   <!-- Main Landing Page -->
   <url>
     <loc>https://audio-xai.com/</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +11,7 @@
   <!-- GTZAN Music Showcase -->
   <url>
     <loc>https://audio-xai.com/gtzan</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -19,31 +19,37 @@
   <!-- GTZAN Genre Pages -->
   <url>
     <loc>https://audio-xai.com/gtzan/reggae</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://audio-xai.com/gtzan/classical</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://audio-xai.com/gtzan/hiphop</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://audio-xai.com/gtzan/jazz</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://audio-xai.com/gtzan/metal</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://audio-xai.com/gtzan/special-cases</loc>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -51,19 +57,19 @@
   <!-- Synthetic Data Pages -->
   <url>
     <loc>https://audio-xai.com/synthetic</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://audio-xai.com/synthetic/explanations</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://audio-xai.com/synthetic/synthetic_data</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

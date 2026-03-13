@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: 'Explanations on Synthetic Data | Samuel Harck',
   description: 'View DRSA-extracted explanations on synthetic audio samples with known ground truth for validation.',
   keywords: ['DRSA', 'synthetic data', 'explanations', 'XAI', 'validation', 'ground truth'],
+  alternates: { canonical: 'https://audio-xai.com/synthetic/explanations' },
 };
 
 export default function ExplanationsPage() {

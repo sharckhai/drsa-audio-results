@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: 'Music Genre Recognition with DRSA - Disentangled Audio Explanations | Samuel Harck',
   description: 'Explore disentangled explanations for music genre classification on the GTZAN dataset. View concept-based XAI results for Classical, Jazz, Hip-Hop, Metal, and Reggae genres using DRSA and LRP.',
   keywords: ['music genre recognition', 'GTZAN dataset', 'DRSA', 'audio explanations', 'XAI', 'neural network', 'classical music', 'jazz', 'hip-hop', 'metal', 'reggae'],
+  alternates: { canonical: 'https://audio-xai.com/gtzan' },
 };
 
 const genres = [

@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: GenrePageProps): Promise<Meta
     title: `${genreData.title} | Samuel Harck`,
     description: genreData.description,
     keywords: ['DRSA', 'audio explanations', 'XAI', 'neural network', genreData.name.toLowerCase(), 'music classification'],
+    alternates: { canonical: `https://audio-xai.com/gtzan/${genre}` },
   };
 }
 
