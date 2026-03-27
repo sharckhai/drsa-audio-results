@@ -111,7 +111,7 @@ export default function Home() {
 
       {/* Abstract Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white rounded-lg shadow-lg border-l-4 border-blue-600 p-6 sm:p-8 lg:p-10">
+        <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 lg:p-10">
           <h2 className="text-2xl sm:text-3xl font-heading font-bold text-gray-900 text-center mb-6">Abstract</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-base sm:text-lg leading-relaxed text-justify italic text-gray-700">
